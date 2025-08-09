@@ -13,6 +13,12 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+.header__logo{
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 105px;
+  height: 39px;
+}
 .nav{
   margin-top: 30px;
   margin-right: 80px;
