@@ -12,6 +12,9 @@
   background-image: url("../images/background_header.svg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  position:relative;
+  display: fex;
 }
 .header__logo{
   margin-top: 30px;
@@ -20,27 +23,63 @@
   height: 39px;
 }
 .nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 30px;
   margin-right: 80px;
+}
+.nav__links{
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+}
+.nav__link{
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
 }
 .header__title{
   max-width: 709px;
   margin-left: 80px;
   margin-top:183px;
 }
+
+.header__span-accent{
+color: #2f80ed;
+display: inline-block;
+font-family: "Noto Serif", "Times New Roman", serif;
+font-style: italic;
+
+}
 .header__description{
   max-width: 683px;
   margin-top: 28px;
   margin-left: 80px;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 30px;
+
 }
 .header__image{
   margin-right: 5px;
   margin-top:124px;
   width: 646px;
   height: 568px;
+  position: absolute;
 }
 .header__paragraph{
 
+}
+
+.header__footer{
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: 6f6f6f;
 }
 .recipes{
 

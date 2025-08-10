@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Descrição da página" />
     <meta name="author" content="Rafael Costa" />
-    <meta name="keywords" content="Definir" />
+    <meta name="keywords" content="Cafe, biblioteca, Tripleten" />
     <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="pages/index.css" />
-    <link name="favico" href="favico.ico" />
+    <link name="favico" rel="ico" href="favico.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,23 +22,27 @@
       <header class="header">
         <img class="header__logo" src="images/logo_coffeeshop_dark.svg">
         <nav class="nav">
-              <a href="#recipes" class="nav__links"> Receitas</a>
-              <a href="#reservation" class="nav__links"> Reservar uma mesa</a>
-              <a href="#footer" class="nav__links"> Contatos</a>
+          <ul class="nav__links">
+             <li> <a href="#recipes" class="nav__link"> Receitas</a></li>
+             <li> <a href="#reservation" class="nav__link"> Reservar uma mesa</a></li>
+              <li><a href="#footer" class="nav__link"> Contatos</a></li>
+              </ul>
         </nav>
-        <h1 class="header__title">Café especial na biblioteca Triple Peaks</h1>
+        <h1 class="header__title"><spam class="header__span-accent">Café especial</spam> na biblioteca Triple Peaks</h1>
         <p class="header__description">
           Esta é nossa zona de estudo! Temos aquele cafezinho para energizar
           você e vibrações aconchegantes para soltar a criatividade.
         </p>
-        <img class="header__image" src="images/inside_coffee_shop.png" />
+        <img class="header__image" alt="Imagem do Interior do Café" src="images/inside_coffee_shop.png" />
         <footer class="header__footer" >
 
 
-
-        <p class="header__paragraph">Horários:</p>
+<div>
+  <p class="header__paragraph">Horários:</p>
         <p class="header__paragraph">Segunda a sexta (10:00 – 19:00)</p>
         <p class="header__paragraph">Sábado a domingo (11:00 - 18:00)</p>
+</div>
+
         <p class="header__paragraph">
           200 Success Avenue, a cidade de Triple Peaks
         </p>
@@ -53,7 +57,7 @@
 
           <div class="recipes__videos">
             <iframe
-            class="recipes__iframe
+            class="recipes__iframe"
               width="560"
               height="315"
               src="https://www.youtube.com/embed/j6VlT_jUVPc?si=UZCaBtqqG13vsexZ"
@@ -63,8 +67,7 @@
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
             ></iframe>
-          </div>
-          <div class="recipes__videos">
+
             <iframe
             class="recipes__iframe"
               width="560"
