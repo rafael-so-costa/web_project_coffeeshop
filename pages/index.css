@@ -1,94 +1,280 @@
-.page{
+.page {
   min-width: 1100px;
   max-width: 1600px;
+  margin: 0 auto;
   font-family: "Inter", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.header{
-  background-image: url("../images/background_header.svg");
-  background-position: center;
+.header {
+  position: relative;
+  background: url("../images/background_header.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  position:relative;
-  display: fex;
+  min-height: 720px;
+  max-height: 800px;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
-.header__logo{
-  margin-top: 30px;
-  margin-left: 30px;
+
+.header__logo {
   width: 105px;
   height: 39px;
+  margin-top: 30px;
+  margin-left: 30px;
 }
-.nav{
+
+.nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   margin-top: 30px;
   margin-right: 80px;
+  position: relative;
 }
-.nav__links{
+
+.nav__links {
   display: flex;
-  gap: 40px;
-  list-style-type: none;
-  margin:0;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
   padding: 0;
 }
-.nav__link{
+
+.nav__link {
   color: #000;
   text-decoration: none;
   font-weight: 500;
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
 }
-.header__title{
+
+.header__span-accent {
+  display: inline-block;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-style: italic;
+  color: #2f80ed;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 72px;
+}
+
+.header__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 72px;
+  letter-spacing: 1px;
   max-width: 709px;
+  margin-top: 183px;
   margin-left: 80px;
-  margin-top:183px;
+  font-weight: 500;
 }
 
-.header__span-accent{
-color: #2f80ed;
-display: inline-block;
-font-family: "Noto Serif", "Times New Roman", serif;
-font-style: italic;
-
-}
-.header__description{
+.header__description {
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 30px;
   max-width: 683px;
   margin-top: 28px;
   margin-left: 80px;
-  font-family: "Noto Serif", "Times New Roman", serif;
-  font-size: 20px;
-  line-height: 30px;
-
 }
-.header__image{
-  margin-right: 5px;
-  margin-top:124px;
-  width: 646px;
-  height: 568px;
+
+
+.header__image {
   position: absolute;
-}
-.header__paragraph{
+  right: 5px;
+  top: 124px;
+  width: 500px;
+  height: 400px;
 
 }
 
-.header__footer{
+.header__footer {
   margin-top: auto;
   display: flex;
-  flex-direction: column;
   gap: 5px;
-  color: 6f6f6f;
-}
-.recipes{
+  color: #6f6f6f;
+  max-width: 709px;
 
 }
 
+
+.header__paragraph {
+  margin: 0;
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #838383;
+  margin-left: 80px;
+  margin-inline-end: 40px;
+
+
+
+}
+
+.recipes {
+  background: #0A2850 url("../images/background_recipes.svg") center/cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 100px 80px 80px;
+  box-sizing: border-box;
+}
+
+.recipes__title {
+  margin: 0 0 24px;
+  max-width: 580px;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+}
+
+.recipes__subtitle {
+  font-style: normal;
+  font-weight: normal;
+  margin: 0 0 80px;
+  max-width: 438px;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "Noto Serif", "Times New Roman", serif;
+}
+
+.recipes__videos {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.recipes__video-item {
+  max-width: 480px;
+}
+
+.recipes__iframe {
+  display: block;
+  width: 480px;
+  height: 273px;
+  border: 0;
+}
+
+.recipes__video-caption {
+  margin: 24px 0 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+}
 .reservation{
-
+  background-color: #D9E7FF;
+  background-image: url(../images/background_reservation.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.reservation__title{
+  padding-top: 100px;
+  margin: 0 0 80px;
+  text-align: center;
+  font-family: "Inter","Arial",sans-serif;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  color: #000;
 }
 
-.content{
+.reservation__form{
+  max-width: 385px;
+  margin: 0 auto;
+}
 
+.form__fieldset{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form__label{
+  font-family: "Inter","Arial",sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  margin-top: 20px;
+}
+
+.form__input{
+  width: 100%;
+  height: 60px;
+  padding: 0 15px;
+  border: 1px solid #838383;
+  border-radius: 4px;
+  font-family: "Inter","Arial",sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000;
+  box-sizing: border-box;
+}
+
+
+.form__input::placeholder{
+  color: #838383;
+}
+
+.form__checkbox{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0 32px;
+  cursor: pointer;
+}
+.form__checkbox-input{
+  width: 20px;
+  height: 20px;
+  border: 1px solid #838383;
+  border-radius: 2px;
+  accent-color: #2F80ED;
+}
+
+.form__checkbox-text{
+  font-family: "Inter","Arial",sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+}
+
+.form__button{
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-radius: 4px;
+  background: #2F80ED;
+  color: #fff;
+  font-family: "Inter","Arial",sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: opacity .2s ease-in-out;
+  margin-top: 32px;
+  }
+
+.form__button:hover{
+  opacity: .7;
 }
