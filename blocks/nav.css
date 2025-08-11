@@ -7,6 +7,7 @@
   position: relative;
 }
 
+
 .nav__links {
   display: flex;
   gap: 20px;
@@ -23,4 +24,8 @@
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
+}
+.nav__link:hover {
+  color: #2f80ed;
+  transition: color 0.3s ease;
 }
